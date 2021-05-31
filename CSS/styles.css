@@ -1,0 +1,73 @@
+body{
+    margin: 10px;
+}
+
+
+
+/*Select by ID*/
+#product{
+
+}
+/* Select by class*/
+.product{
+
+}
+
+/* Select elements that have target atribute*/
+a[target="_blank"]{
+    color: crimson;
+}
+
+
+a[href*="google"]
+{
+    color:rgb(255, 0, 191);
+}
+
+a[href^="https"][href$=".com"]{
+    color: teal;
+}
+
+#products p {
+    color: tomato;
+}
+
+#products > p {
+    color: blueviolet;
+}
+
+#products + p {
+    color:rgb(128, 0, 60);
+}
+
+p::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+p::first-line{
+    font-weight: bold;
+}
+
+::selection{
+    background-color: chartreuse;
+}
+
+p::before{
+   content: "Before...";
+   display: block; 
+}
+
+#products.highlight {
+    color: blueviolet;
+}
+
+p{
+    color: rgb(0, 60, 255);
+    border: 1px solid black;
+}
+
+strong {
+    color:initial;
+    border: inherit;
+}
